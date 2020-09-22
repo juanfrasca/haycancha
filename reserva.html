@@ -34,6 +34,10 @@
         <div>
             <form action="">
                 <div>
+                    <label for="field">¿Dónde jugamos?</label>
+                    <input type="search" id="field" placeholder="¿Ya tenés cancha elegida?">
+                </div>
+                <div>
                     <label for="date">¿Cuándo jugamos?</label>
                     <input type="date" id="date" required>
                 </div>
@@ -51,10 +55,15 @@
                     </select>
                 </div>
                 <div>
-                    <label for="place">Ubicación</label>
-                    <input type="search" id="place" placeholder="¿A dónde querés jugar?">
+                    <label for="price">Precio/jugador(a):</label>
+                    <input type="range" id="price" min="0" max="500" value="500">
                 </div>
-                <input type="submit" value="Reservar">
+                <div>
+                    <label for="place">Ubicación</label>
+                    <input type="search" id="place" placeholder="Buscá cancha en una zona específica.">
+                </div>
+                <input type="submit" value="Buscar cancha">
+                <input type="reset" value="Reestablecer">
             </form>
         </div>
     </section>
