@@ -21,7 +21,6 @@
         <nav>
             <ul class="nav-menu">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/reserva.html">Reservá</a></li>
                 <li><a href="/canchas.html">Canchas</a></li>
                 <li><a href="/mis-reservas.html">Mis reservas</a></li>
                 <li><a href="/contacto.html">Contacto</a></li>
@@ -34,17 +33,17 @@
         <div>
             <div>
                 <ul>
-                    <li><img src="/images/Carrousel 4.jpg" alt="Cancha 1"></li>
-                    <li>Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
-                    <li>Fecha: <span>19/09/2020</span></li>
-                    <li>Cantidad de jugadores/as: <span>7</span></li>
+                    <li><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
+                    <li><i class="far fa-calendar-alt"></i> Fecha: <span>19/09/2020</span></li>
+                    <li><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>7</span></li>
+                    <li>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#star1">
                         Calificar
                     </button>
                     
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="star1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -54,9 +53,11 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Dejá tu calificación (0/5):
                                     <form action="">
-                                        <input type="range" id="stars" min="0" max="5" value="0">
+                                        <label for="stars">Dejá tu calificación (0/5):</label>
+                                        <input type="range" id="stars" min="0" max="5" value="0" required>
+                                        <label for="comment">¿Querés dejar un comentario?</label>
+                                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
@@ -66,118 +67,35 @@
                             </div>
                         </div>
                     </div>
-                    <li><a href="/reserva.html">Volver a reservar</a></li>
+                    </li>
+                    <li><a href="/canchas.html">Volver a reservar</a></li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li><img src="/images/Carrousel 1.jpg" alt="Cancha 2"></li>
-                    <li>Cancha: <span>Canchita De Futbol Pringles</span></li>
-                    <li>Fecha: <span>10/08/2020</span></li>
-                    <li>Cantidad de jugadores/as: <span>6</span></li>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Calificar
-                    </button>
-                
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">¿Cómo fue tu experiencia con esta reserva?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    Dejá tu calificación (0/5):
-                                    <form action="">
-                                        <input type="range" id="stars" min="0" max="5" value="0">
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar cambios</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <li><a href="/reserva.html">Volver a reservar</a></li>
+                    <li><i class="far fa-futbol"></i> Cancha: <span>Canchita De Futbol Pringles</span></li>
+                    <li><i class="far fa-calendar-alt"></i> Fecha: <span>10/08/2020</span></li>
+                    <li><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>6</span></li>
+                    <li><i class="far fa-star"></i> Tu calificación: <span>4</span></li>
+                    <li><a href="/canchas.html">Volver a reservar</a></li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li><img src="/images/Carrousel 4.jpg" alt="Cancha 3"></li>
-                    <li>Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
-                    <li>Fecha: <span>10/07/2020</span></li>
-                    <li>Cantidad de jugadores/as: <span>7</span></li>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Calificar
-                    </button>
-                
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">¿Cómo fue tu experiencia con esta reserva?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    Dejá tu calificación (0/5):
-                                    <form action="">
-                                        <input type="range" id="stars" min="0" max="5" value="0">
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar cambios</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <li><a href="/reserva.html">Volver a reservar</a></li>
+                    <li><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
+                    <li><i class="far fa-calendar-alt"></i> Fecha: <span>10/07/2020</span></li>
+                    <li><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>7</span></li>
+                    <li><i class="far fa-star"></i> Tu calificación: <span>5</span></li>
+                    <li><a href="/canchas.html">Volver a reservar</a></li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li><img src="/images/Carrousel 4.jpg" alt="Cancha 4"></li>
-                    <li>Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
-                    <li>Fecha: <span>10/03/2020</span></li>
-                    <li>Cantidad de jugadores/as: <span>5</span></li>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Calificar
-                    </button>
-                
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">¿Cómo fue tu experiencia con esta reserva?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    Dejá tu calificación (0/5):
-                                    <form action="">
-                                        <input type="range" id="stars" min="0" max="5" value="0">
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar cambios</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <li><a href="/reserva.html">Volver a reservar</a></li>
+                    <li><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
+                    <li><i class="far fa-calendar-alt"></i> Fecha: <span>10/03/2020</span></li>
+                    <li><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>5</span></li>
+                    <li><i class="far fa-star"></i> Tu calificación: <span>3</span></li>
+                    <li><a href="/canchas.html">Volver a reservar</a></li>
                 </ul>
             </div>
         </div>

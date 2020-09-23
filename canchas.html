@@ -21,7 +21,6 @@
         <nav>
             <ul class="nav-menu">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/reserva.html">Reservá</a></li>
                 <li><a href="/canchas.html">Canchas</a></li>
                 <li><a href="/mis-reservas.html">Mis reservas</a></li>
                 <li><a href="/contacto.html">Contacto</a></li>
@@ -40,12 +39,43 @@
                         <li><i class="fas fa-running"></i> Jugadores/as: <span>5/7</span></li>
                         <li><i class="fas fa-star"></i> Calificación: <span>3.7</span></li>
                         <li><i class="fas fa-dollar-sign"></i> Precio/jugador(a): $ <span>XX</span></li>
-                        <li><i class="fas fa-phone"></i> Teléfono: <span>+542613464019</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Ubicación: <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26805.001660124602!2d-68.85893766657956!3d-32.88163445975464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56cdd4efa66e00fb!2sUEFA%20F%C3%9ATBOL.%20Canchas%20de%20f%C3%BAtbol%205%20Y%207!5e0!3m2!1ses-419!2sar!4v1600556326402!5m2!1ses-419!2sar"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe></li>
-                        <li><a href="/reserva.html">Buscar disponibilidad</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubicación:
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cancha1">
+                                <span>Av. San Martín 3110, M5500 Mendoza</span>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancha1" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26805.001660124602!2d-68.85893766657956!3d-32.88163445975464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56cdd4efa66e00fb!2sUEFA%20F%C3%9ATBOL.%20Canchas%20de%20f%C3%BAtbol%205%20Y%207!5e0!3m2!1ses-419!2sar!4v1600556326402!5m2!1ses-419!2sar"
+                                                width="100%" height="450rem" frameborder="0" style="border:0;"
+                                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Principio del widget de enlace de Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanfrasca/partido-de-futbol?hide_event_type_details=1'});return false;">¿Hay
+                                lugar?</a>
+                            <!-- Final del widget de enlace de Calendly -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -57,12 +87,44 @@
                         <li><i class="fas fa-running"></i> Jugadores/as: <span>5</span></li>
                         <li><i class="fas fa-star"></i> Calificación: <span>4.0</span></li>
                         <li><i class="fas fa-dollar-sign"></i> Precio/jugador(a): $ <span>XX</span></li>
-                        <li><i class="fas fa-phone"></i> Teléfono: <span>+542612211873</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Ubicación: <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26801.530629386412!2d-68.88144086044925!3d-32.8931093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09d5941f4099%3A0x60c709dc44f928ae!2sCanchas%20de%20Futbol%205%20-%20Escuela%20de%20Futbol!5e0!3m2!1ses-419!2sar!4v1600556876406!5m2!1ses-419!2sar"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe></li>
-                        <li><a href="/reserva.html">Buscar disponibilidad</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubicación:
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-toggle="modal"
+                                data-target="#cancha2"></button>
+                            <span>De las Tipas s/n, M5500 Mendoza</span>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancha2" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26801.516867403076!2d-68.84665441151415!3d-32.89315478850879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09d5941f4099%3A0x60c709dc44f928ae!2sCanchas%20de%20Futbol%205%20-%20Escuela%20de%20Futbol!5e0!3m2!1ses-419!2sar!4v1600819232406!5m2!1ses-419!2sar"
+                                                width="100%" height="450rem" frameborder="0" style="border:0;"
+                                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Principio del widget de enlace de Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanfrasca/partido-de-futbol?hide_event_type_details=1'});return false;">¿Hay
+                                lugar?</a>
+                            <!-- Final del widget de enlace de Calendly -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -74,12 +136,43 @@
                         <li><i class="fas fa-running"></i> Jugadores/as: <span>5</span></li>
                         <li><i class="fas fa-star"></i> Calificación: <span>4.2</span></li>
                         <li><i class="fas fa-dollar-sign"></i> Precio/jugador(a): $ <span>XX</span></li>
-                        <li><i class="fas fa-phone"></i> Teléfono: <span>+542615870450</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Ubicación: <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26805.001660124602!2d-68.85893766657956!3d-32.88163445975464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08dbe28d6cad%3A0x1c9a2347bd343319!2sPARADA%205!5e0!3m2!1ses-419!2sar!4v1600556939675!5m2!1ses-419!2sar"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe></li>
-                        <li><a href="/reserva.html">Buscar disponibilidad</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubicación:
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cancha3">
+                                <span>Videla Castillo 2526, M5500 Mendoza</span>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancha3" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26801.51686392655!2d-68.8466544!3d-32.8931548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08dbe28d6cad%3A0x1c9a2347bd343319!2sPARADA%205!5e0!3m2!1ses-419!2sar!4v1600819402790!5m2!1ses-419!2sar"
+                                                width="100%" height="450rem" frameborder="0" style="border:0;"
+                                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Principio del widget de enlace de Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanfrasca/partido-de-futbol?hide_event_type_details=1'});return false;">¿Hay
+                                lugar?</a>
+                            <!-- Final del widget de enlace de Calendly -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -91,12 +184,43 @@
                         <li><i class="fas fa-running"></i> Jugadores/as: <span>5/7/11</span></li>
                         <li><i class="fas fa-star"></i> Calificación: <span>3.8</span></li>
                         <li><i class="fas fa-dollar-sign"></i> Precio/jugador(a): $ <span>XX</span></li>
-                        <li><i class="fas fa-phone"></i> Teléfono: <span>+542615434883</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Ubicación: <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26794.96818659518!2d-68.88295646044926!3d-32.9147943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e099b9757a66f%3A0xc255ce3b6ab55ead!2sCanchas%20de%20F%C3%BAtbol!5e0!3m2!1ses-419!2sar!4v1600557021934!5m2!1ses-419!2sar"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe></li>
-                        <li><a href="/reserva.html">Buscar disponibilidad</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubicación:
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cancha4">
+                                <span>Armani L. 1765, M5501 Godoy Cruz, Mendoza</span>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancha4" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53589.93637319036!2d-68.8902091164371!3d-32.9147943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e099b9757a66f%3A0xc255ce3b6ab55ead!2sCanchas%20de%20F%C3%BAtbol!5e0!3m2!1ses-419!2sar!4v1600819822526!5m2!1ses-419!2sar"
+                                                width="100%" height="450rem" frameborder="0" style="border:0;"
+                                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Principio del widget de enlace de Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanfrasca/partido-de-futbol?hide_event_type_details=1'});return false;">¿Hay
+                                lugar?</a>
+                            <!-- Final del widget de enlace de Calendly -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -108,12 +232,43 @@
                         <li><i class="fas fa-running"></i> Jugadores/as: <span>7/11</span></li>
                         <li><i class="fas fa-star"></i> Calificación: <span>4.2</span></li>
                         <li><i class="fas fa-dollar-sign"></i> Precio/jugador(a): $ <span>XX</span></li>
-                        <li><i class="fas fa-phone"></i> Teléfono: <span>+542615798237</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Ubicación: <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26811.51847158991!2d-68.8602954604493!3d-32.86008099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08eccca706a3%3A0x5d060e313cffdf44!2sLa%20Cancha%20FC!5e0!3m2!1ses-419!2sar!4v1600557096637!5m2!1ses-419!2sar"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe></li>
-                        <li><a href="/reserva.html">Buscar disponibilidad</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubicación:
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cancha5">
+                                <span>M5540AUI, AWQ, Godoy J. M. 657, M5540 Las Heras, Mendoza</span>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancha5" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26811.51847158991!2d-68.86029546044925!3d-32.86008099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08eccca706a3%3A0x5d060e313cffdf44!2sLa%20Cancha%20FC!5e0!3m2!1ses-419!2sar!4v1600819901717!5m2!1ses-419!2sar"
+                                                width="100%" height="450rem" frameborder="0" style="border:0;"
+                                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Principio del widget de enlace de Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanfrasca/partido-de-futbol?hide_event_type_details=1'});return false;">¿Hay
+                                lugar?</a>
+                            <!-- Final del widget de enlace de Calendly -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -125,12 +280,43 @@
                         <li><i class="fas fa-running"></i> Jugadores/as: <span>5/6</span></li>
                         <li><i class="fas fa-star"></i> Calificación: <span>4.1</span></li>
                         <li><i class="fas fa-dollar-sign"></i> Precio/jugador(a): $ <span>XX</span></li>
-                        <li><i class="fas fa-phone"></i> Teléfono: <span>+542617091633</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Ubicación: <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26800.93328364342!2d-68.81768076044924!3d-32.8950837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0ec8175df98d%3A0xb43315aa98067b11!2sCanchita%20De%20Futbol%20Pringles!5e0!3m2!1ses-419!2sar!4v1600557136323!5m2!1ses-419!2sar"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe></li>
-                        <li><a href="/reserva.html">Buscar disponibilidad</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubicación:
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cancha6">
+                                <span>Pedro del Castillo 2815, M5519 Mendoza</span>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancha6" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107224.04991656989!2d-68.87135270650023!3d-32.87829213650278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb43315aa98067b11!2sCanchita%20De%20Futbol%20Pringles!5e0!3m2!1ses-419!2sar!4v1600820048057!5m2!1ses-419!2sar"
+                                                width="100%" height="450rem" frameborder="0" style="border:0;"
+                                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Principio del widget de enlace de Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanfrasca/partido-de-futbol?hide_event_type_details=1'});return false;">¿Hay
+                                lugar?</a>
+                            <!-- Final del widget de enlace de Calendly -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -142,12 +328,43 @@
                         <li><i class="fas fa-running"></i> Jugadores/as: <span>5</span></li>
                         <li><i class="fas fa-star"></i> Calificación: <span>4.2</span></li>
                         <li><i class="fas fa-dollar-sign"></i> Precio/jugador(a): $ <span>XX</span></li>
-                        <li><i class="fas fa-phone"></i> Teléfono: <span>+5492612414171</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Ubicación: <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26812.82449404591!2d-68.86277516044927!3d-32.85575999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0892201b2a9f%3A0x4aa5b03fcc9218a2!2sLa%20Cieneguita%20F%C3%BAtbol%20Club!5e0!3m2!1ses-419!2sar!4v1600557172242!5m2!1ses-419!2sar"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe></li>
-                        <li><a href="/reserva.html">Buscar disponibilidad</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubicación:
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cancha7">
+                                <span>875 Washington, Dr. Lemos, Las Heras</span>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancha7" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107224.44593229721!2d-68.87135289078404!3d-32.87796475887002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0892201b2a9f%3A0x4aa5b03fcc9218a2!2sLa%20Cieneguita%20F%C3%BAtbol%20Club!5e0!3m2!1ses-419!2sar!4v1600820159689!5m2!1ses-419!2sar"
+                                                width="100%" height="450rem" frameborder="0" style="border:0;"
+                                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Principio del widget de enlace de Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanfrasca/partido-de-futbol?hide_event_type_details=1'});return false;">¿Hay
+                                lugar?</a>
+                            <!-- Final del widget de enlace de Calendly -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -159,12 +376,43 @@
                         <li><i class="fas fa-running"></i> Jugadores/as: <span>5/6/7/11</span></li>
                         <li><i class="fas fa-star"></i> Calificación: <span>4.0</span></li>
                         <li><i class="fas fa-dollar-sign"></i> Precio/jugador(a): $ <span>XX</span></li>
-                        <li><i class="fas fa-phone"></i> Teléfono: <span>+542617127320</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Ubicación: <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26796.229133204353!2d-68.83737306044921!3d-32.91062860000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09502d48d6d7%3A0xd71ca1e19342bc51!2zTGFzIGNhw7FpdGFzIGbDunRib2w!5e0!3m2!1ses-419!2sar!4v1600557208519!5m2!1ses-419!2sar"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe></li>
-                        <li><a href="/reserva.html">Buscar disponibilidad</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubicación:
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cancha8">
+                                <span>Las Cañas 1511, M5519 Dorrego, Mendoza</span>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancha8" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107184.91653281741!2d-68.88990144179687!3d-32.91062860000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09502d48d6d7%3A0xd71ca1e19342bc51!2zTGFzIGNhw7FpdGFzIGbDunRib2w!5e0!3m2!1ses-419!2sar!4v1600820250348!5m2!1ses-419!2sar"
+                                                width="100%" height="450rem" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                                tabindex="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Principio del widget de enlace de Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juanfrasca/partido-de-futbol?hide_event_type_details=1'});return false;">¿Hay
+                                lugar?</a>
+                            <!-- Final del widget de enlace de Calendly -->
+                        </li>
                     </ul>
                 </div>
             </div>
