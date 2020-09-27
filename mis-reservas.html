@@ -8,94 +8,99 @@
     <title>Hay Cancha! - Mis reservas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/2a98dce335.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <a href="/index.html">
-            <div>
-                <img src="/images/campo-de-futbol.png" alt="campo-de-futbol" id="icono"> Hay Cancha!
-            </div>
-        </a>
+        <div id="icono-nombre">
+            <a href="/index.html">
+                <img src="/images/campo-de-futbol2.svg" alt="campo-de-futbol" id="icono"> Hay Cancha!
+            </a>
+        </div>
         <nav>
             <ul class="nav-menu">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/canchas.html">Canchas</a></li>
                 <li><a href="/mis-reservas.html">Mis reservas</a></li>
                 <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="/inicio-sesion.html">Iniciá Sesión</a> - <a href="/registro.html">Registrate</a></li>
+                <li><a href="/inicio-sesion.html">Iniciá sesión</a><span>/</span><a href="/registro.html">Registrate</a>
+                </li>
             </ul>
         </nav>
     </header>
     <section>
         <h1>Mis Reservas</h1>
-        <div>
-            <div>
-                <ul>
-                    <li><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
-                    <li><i class="far fa-calendar-alt"></i> Fecha: <span>19/09/2020</span></li>
-                    <li><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>7</span></li>
-                    <li>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#star1">
-                        Calificar
-                    </button>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="star1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">¿Cómo fue tu experiencia con esta reserva?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <label for="stars">Dejá tu calificación (0/5):</label>
-                                        <input type="range" id="stars" min="0" max="5" value="0" required>
-                                        <label for="comment">¿Querés dejar un comentario?</label>
-                                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+        <div id="canchas-disponibles">
+            <div class="mis-reservas">
+                <ul class="datos-reservas">
+                    <li class="cancha"><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
+                    <li class="fecha"><i class="far fa-calendar-alt"></i> Fecha: <span>19/09/2020</span></li>
+                    <li class="jugadores"><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>7</span></li>
+                    <li class="calific">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#star1">
+                            Calificar
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="star1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">¿Cómo fue tu experiencia con esta
+                                            reserva?</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="" id="form-reserva">
+                                            <label for="stars">Dejá tu calificación (1/5):</label>
+                                            <input type="range" id="stars" min="1" max="5" value="1" required>
+                                            <label for="comment">¿Querés dejar un comentario?</label>
+                                            <textarea name="comment" id="comment" cols="40" rows="5"></textarea>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </li>
-                    <li><a href="/canchas.html">Volver a reservar</a></li>
+                    <li class="calend"><a href="/canchas.html" class="btn btn-success">Volver a reservar</a></li>
                 </ul>
             </div>
-            <div>
-                <ul>
-                    <li><i class="far fa-futbol"></i> Cancha: <span>Canchita De Futbol Pringles</span></li>
-                    <li><i class="far fa-calendar-alt"></i> Fecha: <span>10/08/2020</span></li>
-                    <li><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>6</span></li>
-                    <li><i class="far fa-star"></i> Tu calificación: <span>4</span></li>
-                    <li><a href="/canchas.html">Volver a reservar</a></li>
+            <div class="mis-reservas">
+                <ul class="datos-reservas">
+                    <li class="cancha"><i class="far fa-futbol"></i> Cancha: <span>Canchita De Futbol Pringles</span></li>
+                    <li class="fecha"><i class="far fa-calendar-alt"></i> Fecha: <span>10/08/2020</span></li>
+                    <li class="jugadores"><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>6</span></li>
+                    <li class="calific2"><i class="far fa-star"></i> Tu calificación: <span>4</span></li>
+                    <li class="calend"><a href="/canchas.html" class="btn btn-success">Volver a reservar</a></li>
                 </ul>
             </div>
-            <div>
-                <ul>
-                    <li><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
-                    <li><i class="far fa-calendar-alt"></i> Fecha: <span>10/07/2020</span></li>
-                    <li><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>7</span></li>
-                    <li><i class="far fa-star"></i> Tu calificación: <span>5</span></li>
-                    <li><a href="/canchas.html">Volver a reservar</a></li>
+            <div class="mis-reservas">
+                <ul class="datos-reservas">
+                    <li class="cancha"><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
+                    <li class="fecha"><i class="far fa-calendar-alt"></i> Fecha: <span>10/07/2020</span></li>
+                    <li class="jugadores"><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>7</span></li>
+                    <li class="calific2"><i class="far fa-star"></i> Tu calificación: <span>5</span></li>
+                    <li class="calend"><a href="/canchas.html" class="btn btn-success">Volver a reservar</a></li>
                 </ul>
             </div>
-            <div>
-                <ul>
-                    <li><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
-                    <li><i class="far fa-calendar-alt"></i> Fecha: <span>10/03/2020</span></li>
-                    <li><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>5</span></li>
-                    <li><i class="far fa-star"></i> Tu calificación: <span>3</span></li>
-                    <li><a href="/canchas.html">Volver a reservar</a></li>
+            <div class="mis-reservas">
+                <ul class="datos-reservas">
+                    <li class="cancha"><i class="far fa-futbol"></i> Cancha: <span>UEFA FÚTBOL. Canchas de fútbol 5 Y 7</span></li>
+                    <li class="fecha"><i class="far fa-calendar-alt"></i> Fecha: <span>10/03/2020</span></li>
+                    <li class="jugadores"><i class="fas fa-running"></i> Cantidad de jugadores/as: <span>5</span></li>
+                    <li class="calific2"><i class="far fa-star"></i> Tu calificación: <span>3</span></li>
+                    <li class="calend"><a href="/canchas.html" class="btn btn-success">Volver a reservar</a></li>
                 </ul>
             </div>
         </div>
@@ -103,15 +108,15 @@
 
     <footer>
         <a href="/index.html">
-            <img src="/images/campo-de-futbol.png" alt="campo-de-futbol">
+            <img src="/images/campo-de-futbol2.svg" alt="campo-de-futbol" id="iconofooter">
         </a>
-        <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
         <address>
-            <a href="https://ar.linkedin.com/in/juan-frasca" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-            <a href="https://dev.to/juanfrasca"><i class="fab fa-dev fa-lg"></i></a>
-            <a href="https://github.com/juanfrasca"><i class="fab fa-github fa-lg"></i></a>
-            <a href="mailto:juanfrasca@gmail.com" id="mail">juanfrasca@gmail.com</a>
+            <div id="contact-icons"><a href="https://ar.linkedin.com/in/juan-frasca" target="_blank"><i
+                        class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://dev.to/juanfrasca" target="_blank"><i class="fab fa-dev fa-lg"></i></a>
+                <a href="https://github.com/juanfrasca" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+            </div>
+            <a href="mailto:juanfrasca@gmail.com" id="mail" target="_blank">juanfrasca@gmail.com</a>
         </address>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
