@@ -60,10 +60,24 @@ header a:hover{
 
 nav{
     font-size: 0.9rem;
-    display: block;
+    display: inline-block;
     width: 66%;
     height: 100%;
+    text-transform: uppercase;
 }
+
+.checkbtn{
+    font-size: 0.9rem;
+    position: absolute;
+    right: 1.4rem;
+    top: 1.4rem;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
 
 .nav-menu{
     display: flex;
@@ -116,6 +130,7 @@ section{
 
 #section-home h1, #section-home h2{
     margin: 0;
+    text-align: center;
 }
 
 #titulo{
@@ -296,7 +311,7 @@ li{
     font-weight: bold;
     position: absolute;
     left: 3rem;
-    bottom: -2rem;
+    bottom: -0.8rem;
 }
 .calificacion{
     grid-area: c;
@@ -306,7 +321,7 @@ li{
     position: absolute;
     /*grid-area: cal;*/
     font-weight: bold;
-    bottom: -2rem;
+    bottom: -0.8rem;
     right: 4rem;
 }
 .precio{
@@ -458,13 +473,18 @@ form label, .fondo-formulario label{
 
 }
 
-#fondo-login{
+#fondo-login, #fondo-login2{
     position: relative;
-    background-image: url(/images/Carrousel\ 2.jpg);
+    background-image: url(/images/Carrousel\ 2\ recorte2.jpg);
     background-size: cover;
     display: flex;
     justify-content: flex-start;
     padding: 0;
+}
+
+#fondo-login2{
+    background-image: url(/images/Carrousel\ 1\ recorte2.jpg);
+    background-size: cover;
 }
 
 .form-login{
@@ -474,6 +494,7 @@ form label, .fondo-formulario label{
 }
 
 #registro{
+    font-size: 0.9rem;
     justify-content: center;
     display: grid;
     grid-template-areas: "name last"
@@ -577,5 +598,79 @@ address{
     } to {
     opacity: 1;
     transform: translateY(0.4rem);
+    }
+}
+
+@media screen and (min-width: 816px) and (max-width: 970px){
+    nav{
+    font-size: 0.7rem;
+    }
+    nav-menu li{
+    padding: 0 0.6rem;        
+    }
+}
+
+@media screen and (max-width: 816px){
+    .checkbtn{
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    #icono-nombre{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 1.6rem;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 4rem;
+        left: -100%;
+        transition: all 0.5s;
+        background-color:/*--spanish-green:*/ #2b9348ff;
+        z-index: 10000;
+        padding: 4rem 0;
+    }
+    
+    .nav-menu li{
+        padding: 0;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /*.nav-menu li:hover{
+        background-color: none;
+    }*/
+
+    .nav-menu a{
+        height: auto;
+        justify-content: center;
+    }
+
+    .nav-menu a:hover{
+        color: whitesmoke;
+        transition: all 0.5s;
+    }
+
+    .nav-menu a:hover:after{
+        animation: none;
+}
+
+    #check:checked ~ul{
+        left: 0;
     }
 }
