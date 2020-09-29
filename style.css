@@ -126,6 +126,10 @@ section{
 
 #section-home{
     padding: 0 0 1rem 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #section-home h1, #section-home h2{
@@ -137,7 +141,7 @@ section{
     position: absolute;
     background-color: whitesmoke;
     border-radius: 8px;
-    top: 8rem;
+    top: 30%;
     right: 2rem;
     z-index: 100;
     padding: 1.2rem;
@@ -149,9 +153,6 @@ section{
     margin-bottom: 1rem;
 }
 
-#carouselExampleSlidesOnly img{
-    height: 26rem;
-}
 
 #reserva-home, #section-home p{
     text-align: center;
@@ -605,6 +606,22 @@ address{
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1224px){
+    #section-home{
+        justify-content: space-around;
+    }
+
+    #subsection-home{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.6rem;
+    }
+    
+    #reserva-home a{
+        font-size: 1.6rem;
+    }
+
     .cancha-datos{
         padding: 1.2rem;
         font-size: 0.9rem;
@@ -641,6 +658,22 @@ address{
     }
     nav-menu li{
         padding: 0 0.6rem;        
+    }
+
+    #section-home{
+        justify-content: space-around;
+    }
+
+    #subsection-home{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.6rem;
+    }
+    
+    #reserva-home a{
+        font-size: 1.6rem;
     }
 
     #canchas-disponibles{
@@ -740,7 +773,23 @@ address{
     top: 3.2rem;
     left: 0;
     right: 0;
-    margin: 0 3.2rem;
+    margin: 0 30%;
+    }
+    
+    #section-home{
+        justify-content: space-around;
+    }
+
+    #subsection-home{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.6rem;
+    }
+    
+    #reserva-home a{
+        font-size: 1.6rem;
     }
     
     section, footer{
@@ -850,9 +899,25 @@ address{
     top: 3.2rem;
     left: 0;
     right: 0;
-    margin: 0 3.2rem;
+    margin: 0 30%;
     }
     
+    #section-home{
+        justify-content: space-around;
+    }
+
+    #subsection-home{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.6rem;
+    }
+    
+    #reserva-home a{
+        font-size: 1.6rem;
+    }
+
     section, footer{
         position: relative;
         top: 4rem;
@@ -958,12 +1023,37 @@ address{
     }
 
     #titulo{
-    top: 3.2rem;
+    top: 1.2rem;
     left: 0;
     right: 0;
-    margin: 0 3.2rem;
+    margin: 0 20%;
+    padding: 0.8rem;
+    }
+
+    #titulo>h1{
+        font-size: 2rem;
     }
     
+    #titulo>h2{
+        font-size: 1.6rem;
+    }
+    
+    #section-home{
+        justify-content: space-around;
+    }
+
+    #subsection-home{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.4rem;
+    }
+    
+    #reserva-home a{
+        font-size: 1.4rem;
+    }
+
     section, footer{
         position: relative;
         top: 4rem;
