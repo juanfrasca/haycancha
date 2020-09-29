@@ -1023,19 +1023,17 @@ address{
     }
 
     #titulo{
-    top: 1.2rem;
-    left: 0;
-    right: 0;
-    margin: 0 20%;
-    padding: 0.8rem;
+    position: static;
+    margin: 0 auto;
+    padding: 1rem;
     }
 
     #titulo>h1{
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     
     #titulo>h2{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     
     #section-home{
@@ -1047,7 +1045,7 @@ address{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     #reserva-home a{
