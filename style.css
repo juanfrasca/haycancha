@@ -1001,8 +1001,8 @@ address{
     }
 
     .grid{
-        grid-template-areas: "j j j j . ."
-                            "p p p p . ."
+        grid-template-areas: "j j j j j ."
+                            "p p p p p ."
                             "c c c c . ."
                             "u u u u u u "
                             "b b . . . .";
