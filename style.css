@@ -443,7 +443,7 @@ form label, .fondo-formulario label{
     column-gap: 2rem;
 }
 
-.fondo-formulario input[type=submit], #submit-login{
+.fondo-formulario input[type=submit], .submit-login{
     margin: 1.2rem auto 0;
     width: 20%;
 }
@@ -499,14 +499,13 @@ form label, .fondo-formulario label{
 
 #registro{
     font-size: 0.9rem;
-    justify-content: center;
     display: grid;
+    justify-content: center;
     grid-template-areas: "name last"
                         "phone birth"
                         "user user"
                         "pass pass"
                         "pass2 pass2";
-                        /*"regist reestab"*/
 }
 
 .name{grid-area: name;}
@@ -516,12 +515,11 @@ form label, .fondo-formulario label{
 .user{grid-area: user;}
 .pass{grid-area: pass;}
 .pass2{grid-area: pass2;}
-/*.regist{grid-area: regist;}
-.reestab{grid-area: reestab;}*/
+
 
 
 #datos-login{
-    background-color:rgba(245, 245, 245, 0.7);
+    background-color:rgba(245, 245, 245, 0.85);
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -550,7 +548,7 @@ form label, .fondo-formulario label{
     width: 100%;
 }
 
-#submit-login{
+.submit-login{
     width: 30%;
 }
 
@@ -713,6 +711,11 @@ address{
     .info,.calendario{
         bottom: 2rem;
     }
+
+    #datos-login{
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 817px){
@@ -838,6 +841,11 @@ address{
     }
     .info,.calendario{
         bottom: 2rem;
+    }
+    
+    #datos-login{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -965,6 +973,11 @@ address{
     }
     .info,.calendario{
         bottom: 2rem;
+    }
+
+    #datos-login{
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -1110,4 +1123,33 @@ address{
         bottom: 2rem;
         right: 2rem;
     }
+
+    #datos-login{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form-login{
+        width: 100%;
+    }
+
+    #submit-reestablecer{
+        width: 100%;
+        justify-content: center;
+        column-gap: 2rem;
+    }
+
+    .submit-login{
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    
+    #registro{
+    grid-template-areas: "name last"
+                        "phone phone" 
+                        "birth birth"
+                        "user user"
+                        "pass pass"
+                        "pass2 pass2";
+}
 }
