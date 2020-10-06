@@ -213,7 +213,7 @@ section{
 
 .img-info{
     display: grid;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     grid-template-areas: "f1 f1"
                         "f2 f3";
@@ -243,7 +243,7 @@ section{
     width: 90%;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.8rem;
     column-gap: 2rem;
 }
 
@@ -658,6 +658,26 @@ address{
     #form-contacto{
         width: 70%;
     }
+
+    .descripcion-fotos{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.6rem;
+    }
+
+    .img-info{
+        grid-template-areas: "f1 f2 f3";
+        width: 100%;
+    }
+
+    #texto{
+        width: 100%;
+    }
+
+    #texto h1{
+        text-align: center;
+    }
+
 }
 
 
@@ -725,7 +745,35 @@ address{
     #form-contacto{
         width: 80%;
     }
+    
+    .descripcion-fotos{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.6rem;
+    }
 
+    .img-info{
+        grid-template-areas: "f1"
+                            "f2"
+                            "f3";
+        width: 100%;
+    }
+
+    #texto{
+        width: 100%;
+    }
+
+    #texto h1{
+        text-align: center;
+    }
+    
+    #servicios-texto {
+        width: 45%;
+    }
+    
+    .servicios-ubicacion{
+        width: 55%;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 817px){
@@ -782,7 +830,7 @@ address{
 
     .nav-menu a:hover:after{
         animation: none;
-}
+    }
 
     #check:checked ~ul{
         left: 0;
@@ -861,6 +909,35 @@ address{
     #form-contacto{
         width: 80%;
     }
+
+    .descripcion-fotos{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.6rem;
+    }
+
+    .img-info{
+        grid-template-areas: "f1"
+                            "f2"
+                            "f3";
+        width: 100%;
+    }
+
+    #texto{
+        width: 100%;
+    }
+
+    #texto h1{
+        text-align: center;
+    }
+
+    #servicios-texto {
+        width: 45%;
+    }
+    
+    .servicios-ubicacion{
+        width: 55%;
+    }   
 }
 
 @media screen and (min-width: 640px) and (max-width: 800px){
@@ -917,7 +994,7 @@ address{
 
     .nav-menu a:hover:after{
         animation: none;
-}
+    }
 
     #check:checked ~ul{
         left: 0;
@@ -1001,9 +1078,38 @@ address{
     .calend{
     right: 6rem;
     }
+    
+    .descripcion-fotos{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.6rem;
+    }
+
+    .img-info{
+        grid-template-areas: "f1"
+                            "f2"
+                            "f3";
+        width: 100%;
+    }
+
+    #texto{
+        width: 100%;
+    }
+
+    #texto h1{
+        text-align: center;
+    }
+
+    #servicios-texto {
+        width: 45%;
+    }
+    
+    .servicios-ubicacion{
+        width: 55%;
+    }   
 }
 
-@media screen and (max-width: 640px){
+@media screen and (min-width: 375px) and (max-width: 640px){
     .checkbtn{
         display: block;
         font-size: 1.6rem;
@@ -1237,4 +1343,329 @@ address{
     .calend a{
         font-size: 0.8rem;
     }
+
+    .descripcion-servicios{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .descripcion-fotos{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.6rem;
+        padding: 1.6rem 0.8rem;
+    }
+
+    .img-info{
+        grid-template-areas: "f1"
+                            "f2"
+                            "f3";
+        width: 100%;
+    }
+
+    #texto{
+        width: 100%;
+    }
+
+    #texto h1{
+        text-align: center;
+        margin: 0 0 1.2rem 0;
+    }
+
+    #servicios-texto{
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 2rem;
+        width: 100%;
+    }
+    
+    .servicios-ubicacion{
+        width: 100%;
+        height: auto;
+    }  
 }
+
+@media screen and (max-width: 375px){
+    .checkbtn{
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    #icono-nombre{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 1.6rem;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 4rem;
+        left: -100%;
+        transition: all 0.5s;
+        background-color:/*--spanish-green:*/ #2b9348ff;
+        z-index: 10000;
+        padding: 4rem 0;
+    }
+    
+    .nav-menu li{
+        padding: 0;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-menu a{
+        height: auto;
+        justify-content: center;
+    }
+
+    .nav-menu a:hover{
+        color: whitesmoke;
+        transition: all 0.5s;
+    }
+
+    .nav-menu a:hover:after{
+        animation: none;
+}
+
+    #check:checked ~ul{
+        left: 0;
+    }
+
+    #titulo{
+    position: static;
+    margin: 0 auto;
+    padding: 1rem;
+    }
+
+    #titulo>h1{
+        font-size: 2.4rem;
+    }
+    
+    #titulo>h2{
+        font-size: 2rem;
+    }
+    
+    #section-home{
+        justify-content: space-around;
+    }
+
+    #subsection-home{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.2rem;
+    }
+    
+    #reserva-home a{
+        font-size: 1.4rem;
+    }
+
+    section, footer{
+        position: relative;
+        top: 4rem;
+    }
+    
+    #fondo-login, #fondo-login2, #footer-login{
+        position: relative;
+        top: 0;
+    }
+
+    #canchas-disponibles{
+        padding: 0.4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto-cancha{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto-cancha img{
+        width: 100%;
+    }
+
+    .cancha-datos{
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        padding: 2rem;
+        padding-bottom: 6rem;
+    }
+
+    .grid{
+        grid-template-areas: "j j j j j ."
+                            "p p p p p ."
+                            "c c c c . ."
+                            "u u u u u u "
+                            "b b . . . .";
+    }
+    .info{
+        bottom: 2rem;
+        left: 2rem;
+    }
+    
+    .calendario{
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    #datos-login{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form-login{
+        width: 100%;
+    }
+
+    #submit-reestablecer{
+        width: 100%;
+        justify-content: center;
+        column-gap: 2rem;
+    }
+
+    .submit-login{
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    
+    #registro{
+    grid-template-areas: "name last"
+                        "phone phone" 
+                        "birth birth"
+                        "user user"
+                        "pass pass"
+                        "pass2 pass2";
+    }
+
+    #h1-contacto{
+        font-size: 1.6rem;
+    }
+
+    #h3-contacto{
+        font-size: 1.2rem;
+    }
+    
+    #redes-sociales{
+        font-size: 1rem;
+        column-gap: 1rem;
+    }
+
+    #contacto{
+        font-size: 0.6rem;
+        width: 50%;
+    }
+
+    .fondo-formulario{
+        width: 100%;
+    }
+
+    #form-contacto{
+        width: 80%;
+        padding: 1rem 0;
+        font-size: 0.6rem;
+    }
+
+    #form-contacto label{
+        font-size: 0.8rem;
+    }
+
+    #boton input{
+        font-size: 0.6rem;
+    }
+
+    .mis-reservas{
+        padding: 1rem 0.6rem;
+        justify-items: start;
+    }
+
+    .datos-reservas{
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    .calific{
+        bottom: 1rem;
+    }
+
+    .calific button{
+        font-size: 0.8rem;
+    }
+
+    .calend{
+        bottom: 1rem;
+        right: 3rem;
+    }
+
+    .calend a{
+        font-size: 0.8rem;
+    }
+
+    .descripcion-servicios{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    .descripcion-fotos{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.6rem;
+        padding: 1rem;
+    }
+
+    .img-info{
+        grid-template-areas: "f1"
+                            "f2"
+                            "f3";
+        width: 100%;
+    }
+
+    #texto{
+        width: 100%;
+    }
+
+    #texto h1{
+        text-align: center;
+        margin: 0 0 1.2rem 0;
+    }
+
+    #servicios-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        column-gap: 2rem;
+        width: 100%;
+    }
+    
+    .servicios-ubicacion{
+        width: 100%;
+        height: auto;
+    }  
+}
+
