@@ -1323,7 +1323,7 @@ address{
     }
 
     .datos-reservas{
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 0.8rem;
     }
 
@@ -1602,7 +1602,7 @@ address{
     }
 
     .datos-reservas{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 0.8rem;
     }
 
@@ -1627,7 +1627,7 @@ address{
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 1rem;
     }
 
