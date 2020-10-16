@@ -1,6 +1,6 @@
 const cancha = document.body.querySelectorAll(".foto-cancha");
 
-console.log("Canchas dispoibles cargadas: "+ cancha.length);
+console.log("Canchas disponibles cargadas: "+ cancha.length);
 let contador = [];
 contador.length = cancha.length;
 contador.fill(0);
