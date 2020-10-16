@@ -563,6 +563,11 @@ form label, .fondo-formulario label{
     padding: 0;
 }
 
+#stars-li{
+    display: flex;
+    padding: 0;
+}
+
 footer{
     padding: 1rem 0;
     position: relative;
