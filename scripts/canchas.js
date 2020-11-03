@@ -19,5 +19,3 @@ titulo.addEventListener("dblclick",function () {
     }    
 })
 
-
-

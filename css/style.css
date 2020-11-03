@@ -166,7 +166,7 @@ section{
     align-items: flex-start;
     padding: 1rem 4rem;
     row-gap: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .foto-cancha,.mis-reservas{
@@ -175,10 +175,15 @@ section{
     width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
-    /*column-gap: 5%;*/
     background-color: whitesmoke;
     border-radius: 8px;
 }
+
+.foto-cancha-oscuro{
+    background-color: #3f3f3f;
+    color: whitesmoke;
+}
+
 
 .foto-cancha img{
     width: 40%;
@@ -197,6 +202,7 @@ section{
     align-items: flex-start;
     padding: 3rem;
 }
+
 
 .cancha-datos ul,.descripcion-servicios ul{
     padding: 0;
@@ -267,8 +273,8 @@ section{
 
 h1{
     text-align: center;
-    color:/*--spanish-viridian:*/ #007f5f;
-    margin: 2rem 0;
+    color:/*--spanish-viridian:*/ #2b9348ff;
+    margin: 1rem 0 2rem 0;
     font-family: 'Ubuntu';
     font-size: 2.4rem;
 }
@@ -283,6 +289,7 @@ h3{
 #h3-contacto{
     text-align: center;
     margin: 1.2rem 0 0 0;
+    color: #2b9348ff;
 }
 
 a{
@@ -603,6 +610,32 @@ address{
     justify-content: flex-start;
     align-items: center;
     column-gap: 0.4rem;
+}
+
+.oscuro{
+    background-color: #1f1f1f    
+}
+
+.oscuro2{
+    color: whitesmoke;
+}
+
+#foco{
+    display: none;
+}
+
+#cambiarTema{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    color: #2b9348ff;
+}
+
+#cambiarTema label{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
 }
 
 @keyframes underline {
