@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
-<body>
+<body onload="cargarModo();">
     <header>
         <div id="icono-nombre">
             <a href="/index.html">
@@ -34,6 +34,11 @@
         </nav>
     </header>
     <section>
+        <div id="cambiarTema">
+            <input type="checkbox" id="foco" onclick="cambiarModo();">
+            <label for="foco"><i class="fas fa-lightbulb fa-3x"></i><span id="tema">Tema {{tema}}</span>
+                <!--oscuro/claro--></label>
+        </div>
         <h1>Mis Reservas</h1>
         <div id="canchas-disponibles">
             <div class="mis-reservas">
@@ -136,6 +141,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="/scripts/mis-reservas.js"></script>
+    <script src="/scripts/scripts.js"></script>
 </body>
 
 </html>

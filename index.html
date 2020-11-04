@@ -10,16 +10,11 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/2a98dce335.js" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $('.carousel').carousel({
-                interval: 200
-            });
-        });
-    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
-<body>
+<body onload="cargarModo();">
     <header>
         <div id="icono-nombre">
             <a href="/index.html">
@@ -63,6 +58,11 @@
                 <h1>Hay Cancha!</h1>
             </div>
         </div>
+        <div id="cambiarTema">
+            <input type="checkbox" id="foco" onclick="cambiarModo();">
+            <label for="foco"><i class="fas fa-lightbulb fa-3x"></i><span id="tema">Tema {{tema}}</span>
+                <!--oscuro/claro--></label>
+        </div>
         <div id="subsection-home">
             <p>Bienvenidos a <em>Hay Cancha!</em>, la página para encontrar el lugar de tu próximo picado. <br> Elegí
                 cuándo
@@ -97,6 +97,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="/scripts/scripts.js"></script>
 </body>
 
 </html>

@@ -157,6 +157,7 @@ section{
 #reserva-home, #section-home p{
     text-align: center;
     padding: 0 1.2rem;
+    margin: 0.8rem 0;
 }
 
 #canchas-disponibles{
@@ -177,11 +178,6 @@ section{
     align-items: flex-start;
     background-color: whitesmoke;
     border-radius: 8px;
-}
-
-.foto-cancha-oscuro{
-    background-color: #3f3f3f;
-    color: whitesmoke;
 }
 
 
@@ -610,6 +606,11 @@ address{
     justify-content: flex-start;
     align-items: center;
     column-gap: 0.4rem;
+}
+
+.div-oscuro{
+    background-color: #3f3f3f;
+    color: whitesmoke;
 }
 
 .oscuro{
