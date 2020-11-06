@@ -19,3 +19,23 @@ titulo.addEventListener("dblclick",function () {
     }    
 })
 
+const mascanchas = new Vue({
+    el: "#canchas-disponibles",
+    data: {
+        mostrar: false,
+        masmenos: "más",
+    },
+    methods: {
+        show: function () {
+            
+            this.mostrar = !this.mostrar;
+            if (this.masmenos === "menos") {
+                this.masmenos = "más";
+                
+            }else{
+                this.masmenos = "menos";
+            }
+        }
+    }
+})
+

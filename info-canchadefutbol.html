@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/2a98dce335.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="cargarModo();">
     <header>
         <div id="icono-nombre">
             <a href="/index.html">
@@ -33,6 +33,7 @@
         </nav>
     </header>
     <section>
+        <input type="button" class="btn btn-success" id="atras" value="Atrás" onclick="history.go(-1)">
         <div class="info-cancha">
             <div class="descripcion-fotos">
                 <div id="texto">
@@ -114,6 +115,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="/scripts/scripts.js"></script>
 </body>
 
 </html>

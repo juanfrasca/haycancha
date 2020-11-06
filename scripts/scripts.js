@@ -3,8 +3,10 @@ let foco = cuerpoweb.querySelector("#cambiarTema i");
 let label = cuerpoweb.querySelector("#cambiarTema label");
 let modocolor = localStorage.getItem("modo");
 let fotocancha = cuerpoweb.querySelectorAll(".foto-cancha");
+let modal = cuerpoweb.querySelectorAll(".modal-content");
 let misreservas = cuerpoweb.querySelectorAll(".mis-reservas");
 let fondoform = cuerpoweb.querySelector(".fondo-formulario");
+let titulohome = cuerpoweb.querySelector("#titulo");
 let subsectionhome = cuerpoweb.querySelector("#subsection-home p");
 let h3 = cuerpoweb.querySelectorAll(".foto-cancha h3");
 
@@ -12,10 +14,15 @@ let h3 = cuerpoweb.querySelectorAll(".foto-cancha h3");
 function cargarModo() {
     if (modocolor === "oscuro") {
         cuerpoweb.classList.add("oscuro");
-        foco.classList.remove("fas");
-        foco.classList.add("far");
-        label.classList.add("oscuro2");
+        if (foco != null) {
+            foco.classList.remove("fas");
+            foco.classList.add("far");
+            label.classList.add("oscuro");
+        }
         fotocancha.forEach(div => {
+            div.classList.add("div-oscuro");
+        });
+        modal.forEach(div => {
             div.classList.add("div-oscuro");
         });
         misreservas.forEach(div => {
@@ -24,18 +31,26 @@ function cargarModo() {
         if (fondoform != null) {
             fondoform.classList.add("div-oscuro");
         }
+        if (titulohome != null) {
+            titulohome.classList.add("div-oscuro");
+        }
         if (subsectionhome != null) {
-            subsectionhome.classList.add("oscuro2");
+            subsectionhome.classList.add("oscuro");
         }
         h3.forEach(titulo => {
             titulo.classList.add("div-oscuro");
         });
     }else{
         cuerpoweb.classList.remove("oscuro");
-        foco.classList.remove("far");
-        foco.classList.add("fas");
-        label.classList.remove("oscuro2");
+        if (foco != null) {
+            foco.classList.remove("far");
+            foco.classList.add("fas");
+            label.classList.remove("oscuro");
+        }
         fotocancha.forEach(div => {
+            div.classList.remove("div-oscuro");
+        });
+        modal.forEach(div => {
             div.classList.remove("div-oscuro");
         });
         misreservas.forEach(div => {
@@ -44,17 +59,22 @@ function cargarModo() {
         if (fondoform != null) {
             fondoform.classList.remove("div-oscuro");    
         }
+        if (titulohome != null) {
+            titulohome.classList.remove("div-oscuro");
+        }
         if (subsectionhome != null) {
-            subsectionhome.classList.remove("oscuro2");
+            subsectionhome.classList.remove("oscuro");
         }
         h3.forEach(titulo => {
             titulo.classList.remove("div-oscuro");
         });
     }
-    cambiaTema.cambiarTema(modocolor);
+    if (foco != null) {
+        cambiaTema.cambiarTema(modocolor);
+    }
 }
 
-cambiaTema = new Vue({
+const cambiaTema = new Vue({
     el: "#tema",
     data: {
         tema: "",
@@ -76,8 +96,11 @@ function cambiarModo() {
         cuerpoweb.classList.remove("oscuro");
         foco.classList.remove("far");
         foco.classList.add("fas");
-        label.classList.remove("oscuro2");
+        label.classList.remove("oscuro");
         fotocancha.forEach(div => {
+            div.classList.remove("div-oscuro");
+        });
+        modal.forEach(div => {
             div.classList.remove("div-oscuro");
         });
         misreservas.forEach(div => {
@@ -86,8 +109,11 @@ function cambiarModo() {
         if (fondoform != null) {
             fondoform.classList.remove("div-oscuro");  
         }
+        if (titulohome != null) {
+            titulohome.classList.remove("div-oscuro");
+        }
         if (subsectionhome != null) {
-            subsectionhome.classList.remove("oscuro2");
+            subsectionhome.classList.remove("oscuro");
         }
         h3.forEach(titulo => {
             titulo.classList.remove("div-oscuro");
@@ -98,8 +124,11 @@ function cambiarModo() {
         cuerpoweb.classList.add("oscuro");
         foco.classList.remove("fas");
         foco.classList.add("far");
-        label.classList.add("oscuro2");
+        label.classList.add("oscuro");
         fotocancha.forEach(div => {
+            div.classList.add("div-oscuro");
+        });
+        modal.forEach(div => {
             div.classList.add("div-oscuro");
         });
         misreservas.forEach(div => {
@@ -108,8 +137,11 @@ function cambiarModo() {
         if (fondoform != null) {
             fondoform.classList.add("div-oscuro");
         }
+        if (titulohome != null) {
+            titulohome.classList.add("div-oscuro");
+        }
         if (subsectionhome != null) {
-            subsectionhome.classList.add("oscuro2");
+            subsectionhome.classList.add("oscuro");
         }
         h3.forEach(titulo => {
             titulo.classList.add("div-oscuro");
