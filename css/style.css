@@ -941,6 +941,10 @@ address{
     #reserva-home a{
         font-size: 1.6rem;
     }
+
+    #reserva-home{
+        margin-bottom: 2.8rem;
+    }
     
     section, footer{
         position: relative;
@@ -1027,6 +1031,9 @@ address{
         right: 1.4rem;
     }
     
+    #cambiarTema{
+    margin-top: 1rem;
+    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 800px){
@@ -1111,7 +1118,11 @@ address{
     #reserva-home a{
         font-size: 1.6rem;
     }
-
+    
+    #reserva-home{
+        margin-bottom: 2.8rem;
+    }
+    
     section, footer{
         position: relative;
         top: 4rem;
@@ -1200,6 +1211,10 @@ address{
     #atras{
         top: 2rem;
         right: 1.4rem;
+    }
+
+    #cambiarTema{
+    margin-top: 1rem;
     }
 }
 
@@ -1291,6 +1306,10 @@ address{
     
     #reserva-home a{
         font-size: 1.4rem;
+    }
+
+    #reserva-home{
+        margin-bottom: 2rem;
     }
 
     section, footer{
@@ -1486,6 +1505,10 @@ address{
         margin: 1rem 0.4rem 0 auto;
         display: flex;
     }
+
+    #cambiarTema{
+    margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -1575,7 +1598,11 @@ address{
     }
     
     #reserva-home a{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    #reserva-home{
+        margin-bottom: 3rem;
     }
 
     section, footer{
@@ -1772,6 +1799,10 @@ address{
         position: static;
         margin: 1rem 0.4rem 0 auto;
         display: flex;
+    }
+
+    #cambiarTema{
+    margin-top: 1rem;
     }
 }
 
